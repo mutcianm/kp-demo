@@ -17,3 +17,6 @@ Either[Int, +?]          // equivalent to: type R[+A] = Either[Int, A]
 Function2[-?, Long, +?]  // equivalent to: type R[-A, +B] = Function2[A, Long, B]
 EitherT[?[_], Int, ?]    // equivalent to: type R[F[_], B] = EitherT[F, Int, B]
 ```
+# scala.meta (http://scalameta.org/tutorial/)
+
+Use scala.meta to transform types the same way Kind Projector does.
